@@ -1,0 +1,14 @@
+App_Data/*
+bin/*
+Models/*
+obj/*
+Properties/*
+scripts/*
+ApplicationInsights.config
+SlotMachineChallenge.csproj
+SlotMachineChallenge.csproj.user
+Global.asax
+packages.config
+Web.config
+Web.Debug.config
+Web.Release.config
