@@ -1,0 +1,15 @@
+App_Data/*
+Assets/*
+bin/*
+Models/*
+obj/*
+Properties/*
+scripts/*
+ApplicationInsights.config
+ConversionChallenge.csproj
+ConversionChallenge.csproj.user
+Global.asax
+packages.config
+Web.config
+Web.Debug.config
+Web.Release.config
