@@ -14,4 +14,12 @@ namespace ChallengeHeroMonsterClassesPart1
 
         }
     }
+
+    class Character
+    {
+        public string Name { get; set; }
+        public int Health { get; set; }
+        public int DamageMaximum { get; set; }
+        public int AttackBonus { get; set; }
+    }
 }
