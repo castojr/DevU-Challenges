@@ -21,5 +21,24 @@ namespace ChallengeHeroMonsterClassesPart1
         public int Health { get; set; }
         public int DamageMaximum { get; set; }
         public int AttackBonus { get; set; }
+
+        Random random = new Random();
+        public int Attack()
+        {
+            int damageInflicted = random.Next();
+            return damageInflicted;
+        }
+
+        public int Defend (int damage)
+        {
+            int defendFromAttack = this.Health - damage;
+            return defendFromAttack; 
+
+        }
+
+        /*
+        The Character class should have two methods:
+        2. Defend(int damage) - deducts the damage from this Character's health
+        */
     }
 }
