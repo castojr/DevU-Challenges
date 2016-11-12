@@ -11,6 +11,8 @@ namespace ChallengeHeroMonsterClassesPart1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Character hero = new Character();
+            Character monster = new Character();
 
         }
     }
