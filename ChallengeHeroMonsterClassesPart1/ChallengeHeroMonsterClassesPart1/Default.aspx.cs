@@ -36,9 +36,5 @@ namespace ChallengeHeroMonsterClassesPart1
 
         }
 
-        /*
-        The Character class should have two methods:
-        2. Defend(int damage) - deducts the damage from this Character's health
-        */
     }
 }
