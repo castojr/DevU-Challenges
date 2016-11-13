@@ -30,10 +30,14 @@ namespace ChallengeHeroMonsterClassesPart1
             int monsterAttack = monster.Attack();
             hero.Defend(monsterAttack);
 
-            resultLabel.Text = String.Format("<h1>ROUND 1</h1>{0}'s Health = {1}%<br/>{2}'s Health = {3}%", hero.Name, heroDefend, monster.Name, monsterDefend);
+            Stats(hero);
+            Stats(monster);
         }
 
-        
+        private void Stats(Character character)
+        {
+            resultLabel.Text += String.Format("<p>Name: {0} - Health: {1} - Damage Maximum: {2} - Attack Bonus: {3}</p>", character.Name, character.Health, character.DamageMaximum, character.AttackBonus);
+        }
     }
 
     class Character
