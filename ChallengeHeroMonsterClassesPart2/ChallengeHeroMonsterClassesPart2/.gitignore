@@ -1,0 +1,13 @@
+App_Data/*
+bin/*
+Models/*
+obj/*
+Properties/*
+ApplicationInsights.config
+ChallengeHeroMonsterClassesPart2.csproj
+ChallengeHeroMonsterClassesPart2.csproj.user
+Global.asax
+packages.config
+Web.config
+Web.Debug.config
+Web.Release.config
