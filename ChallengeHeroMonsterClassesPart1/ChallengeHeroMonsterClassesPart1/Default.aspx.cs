@@ -24,11 +24,13 @@ namespace ChallengeHeroMonsterClassesPart1
             monster.DamageMaximum = 50;
             monster.AttackBonus = 50;
 
-            int heroAttack = hero.Attack();
-            int monsterDefend = monster.Defend(heroAttack);
+            int heroAttack = hero.AttackBonus; 
+            int damage = monster.Defend(heroAttack);
 
-            resultLabel.Text = String.Format("{0} strikes and {1} has {2} health left", hero.Name, monster.Name, monsterDefend);
+            resultLabel.Text = String.Format("{0} strikes and {1} has {2}% health left", hero.Name, monster.Name, damage);
         }
+
+
 
     }
 
