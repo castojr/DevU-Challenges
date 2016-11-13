@@ -14,7 +14,22 @@ namespace ChallengeHeroMonsterClassesPart1
             Character hero = new Character();
             Character monster = new Character();
 
+            hero.Name = "He-Man";
+            hero.Health = 100;
+            hero.DamageMaximum = 50;
+            hero.AttackBonus = 50;
+
+            monster.Name = "Skeletor";
+            monster.Health = 100;
+            monster.DamageMaximum = 50;
+            monster.AttackBonus = 50;
+
+            int heroAttack = hero.Attack();
+            int monsterDefend = monster.Defend(heroAttack);
+
+            resultLabel.Text = String.Format("{0} strikes and {1} has {2} health left", hero.Name, monster.Name, monsterDefend);
         }
+
     }
 
     class Character
