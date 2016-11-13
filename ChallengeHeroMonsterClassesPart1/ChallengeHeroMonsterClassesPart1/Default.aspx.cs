@@ -25,16 +25,15 @@ namespace ChallengeHeroMonsterClassesPart1
             monster.AttackBonus = true;
 
             int heroAttack = hero.Attack(); 
-            int monsterDefend = monster.Defend(heroAttack);
+            monster.Defend(heroAttack);
 
             int monsterAttack = monster.Attack();
-            int heroDefend = hero.Defend(monsterAttack);
+            hero.Defend(monsterAttack);
 
             resultLabel.Text = String.Format("<h1>ROUND 1</h1>{0}'s Health = {1}%<br/>{2}'s Health = {3}%", hero.Name, heroDefend, monster.Name, monsterDefend);
         }
 
         
-
     }
 
     class Character
@@ -52,10 +51,10 @@ namespace ChallengeHeroMonsterClassesPart1
             return damage;
         }
 
-        public int Defend (int damage)
+        public void Defend (int damage)
         {
-            int defendFromAttack = this.Health - damage;
-            return defendFromAttack; 
+            this.Health -= damage;
+             
 
         }
 
