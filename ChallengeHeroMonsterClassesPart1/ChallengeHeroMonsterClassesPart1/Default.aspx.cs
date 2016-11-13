@@ -17,20 +17,23 @@ namespace ChallengeHeroMonsterClassesPart1
             hero.Name = "He-Man";
             hero.Health = 100;
             hero.DamageMaximum = 50;
-            hero.AttackBonus = 50;
+            hero.AttackBonus = true;
 
             monster.Name = "Skeletor";
             monster.Health = 100;
             monster.DamageMaximum = 50;
-            monster.AttackBonus = 50;
+            monster.AttackBonus = true;
 
-            int heroAttack = hero.AttackBonus; 
-            int damage = monster.Defend(heroAttack);
+            int heroAttack = hero.Attack(); 
+            int monsterDefend = monster.Defend(heroAttack);
 
-            resultLabel.Text = String.Format("{0} strikes and {1} has {2}% health left", hero.Name, monster.Name, damage);
+            int monsterAttack = monster.Attack();
+            int heroDefend = hero.Defend(monsterAttack);
+
+            resultLabel.Text = String.Format("<h1>ROUND 1</h1>{0}'s Health = {1}%<br/>{2}'s Health = {3}%", hero.Name, heroDefend, monster.Name, monsterDefend);
         }
 
-
+        
 
     }
 
@@ -39,13 +42,14 @@ namespace ChallengeHeroMonsterClassesPart1
         public string Name { get; set; }
         public int Health { get; set; }
         public int DamageMaximum { get; set; }
-        public int AttackBonus { get; set; }
+        public bool AttackBonus { get; set; }
 
-        Random random = new Random();
+        
         public int Attack()
         {
-            int damageInflicted = random.Next();
-            return damageInflicted;
+            Random random = new Random();
+            int damage = random.Next(DamageMaximum);
+            return damage;
         }
 
         public int Defend (int damage)
