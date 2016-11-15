@@ -27,7 +27,7 @@ namespace ChallengeHeroMonsterClassesPart2
             monster.AttackBonus = true;
             
 
-            while (hero.Health > 0 || monster.Health > 0)
+            while (hero.Health > 0 && monster.Health > 0)
             {
                 int monsterAttack = monster.Attack(redDice);
                 hero.Defend(monsterAttack);
