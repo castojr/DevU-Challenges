@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+
 
 namespace ChallengeHeroMonsterClassesPart2
 {
@@ -48,15 +44,33 @@ namespace ChallengeHeroMonsterClassesPart2
                 }
                         
             }
-
+            
             Stats(hero);
             Stats(monster);
+            displayResult(hero, monster);
         }
         private void Stats(Character character)
         {
             resultLabel.Text += String.Format("<p>Name: {0} - Health: {1} - Damage Maximum: {2} - Attack Bonus: {3}</p>", character.Name, character.Health, character.DamageMaximum, character.AttackBonus);
         }
 
+        private void displayResult(Character opponent1, Character opponent2)
+        {
+
+            if (opponent1.Health < 0 && opponent2.Health < 0)
+            {
+                resultLabel.Text += String.Format("Both {0} and {1} died", opponent1.Name, opponent2.Name);
+            }
+            else if (opponent1.Health > opponent2.Health)
+            {
+                resultLabel.Text += String.Format("{0} Defeats {1}", opponent1.Name, opponent2.Name);
+            }
+            else if (opponent1.Health < opponent2.Health)
+            {
+                resultLabel.Text += String.Format("{0} Defeats {1}", opponent2.Name, opponent1.Name);
+            }
+
+        }
 
     }
 
