@@ -25,20 +25,28 @@ namespace ChallengeHeroMonsterClassesPart2
             monster.Health = 100;
             monster.DamageMaximum = 6;
             monster.AttackBonus = true;
-
-            int heroAttack = hero.Attack(redDice);
-            monster.Defend(heroAttack);
-            if (hero.AttackBonus)
-            {
-                monster.Health -= monster.DamageMaximum;
-            }
             
 
-            int monsterAttack = monster.Attack(redDice);
-            hero.Defend(monsterAttack);
-            if (monster.AttackBonus)
+            while (hero.Health > 0 || monster.Health > 0)
             {
-                hero.Health -= hero.DamageMaximum;
+                int monsterAttack = monster.Attack(redDice);
+                hero.Defend(monsterAttack);
+                if (monster.AttackBonus)
+                {
+                    hero.Health -= hero.DamageMaximum;
+                }
+                
+                int heroAttack = hero.Attack(redDice);
+                monster.Defend(heroAttack);
+                if (hero.AttackBonus)
+                {
+                    monster.Health -= monster.DamageMaximum;
+                }
+                if (hero.Health == 0 || monster.Health == 0)
+                {                
+                    break;
+                }
+                        
             }
 
             Stats(hero);
