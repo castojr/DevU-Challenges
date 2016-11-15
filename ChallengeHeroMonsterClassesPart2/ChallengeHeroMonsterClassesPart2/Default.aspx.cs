@@ -11,31 +11,35 @@ namespace ChallengeHeroMonsterClassesPart2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Random random = new Random();
             Dice redDice = new Dice();
             
-
             Character hero = new Character();
             hero.Name = "He-Man";
             hero.Health = 100;
-            hero.DamageMaximum = 50;
+            hero.DamageMaximum = 6;
             hero.AttackBonus = true;
-             
-
 
             Character monster = new Character();
             monster.Name = "Skeletor";
             monster.Health = 100;
-            monster.DamageMaximum = 50;
+            monster.DamageMaximum = 6;
             monster.AttackBonus = true;
 
-            
-             
-
-            int heroAttack = hero.Attack();
+            int heroAttack = hero.Attack(redDice);
             monster.Defend(heroAttack);
+            if (hero.AttackBonus)
+            {
+                monster.Health -= monster.DamageMaximum;
+            }
+            
 
-            int monsterAttack = monster.Attack();
+            int monsterAttack = monster.Attack(redDice);
             hero.Defend(monsterAttack);
+            if (monster.AttackBonus)
+            {
+                hero.Health -= hero.DamageMaximum;
+            }
 
             Stats(hero);
             Stats(monster);
@@ -44,6 +48,8 @@ namespace ChallengeHeroMonsterClassesPart2
         {
             resultLabel.Text += String.Format("<p>Name: {0} - Health: {1} - Damage Maximum: {2} - Attack Bonus: {3}</p>", character.Name, character.Health, character.DamageMaximum, character.AttackBonus);
         }
+
+
     }
 
     class Character
