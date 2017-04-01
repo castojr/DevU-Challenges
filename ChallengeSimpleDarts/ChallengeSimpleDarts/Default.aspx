@@ -12,6 +12,18 @@
     
         <asp:Button ID="okButton" runat="server" OnClick="okButton_Click" Text="OK" />
     
+        <br />
+        <br />
+        Player 1:
+        <asp:Label ID="playerOneLabel" runat="server"></asp:Label>
+        <br />
+        Player 2:
+        <asp:Label ID="playerTwoLabel" runat="server"></asp:Label>
+        <br />
+        <br />
+        Winner!:
+        <asp:Label ID="winnerLabel" runat="server"></asp:Label>
+    
     </div>
     </form>
 </body>

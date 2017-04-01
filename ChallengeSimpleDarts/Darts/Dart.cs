@@ -8,6 +8,7 @@ namespace Darts
 {
     public class Dart
     {
-        public Dart(Random random)
+        public Dart(Random random);
     }
+
 }
