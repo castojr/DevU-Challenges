@@ -1,0 +1,5 @@
+C:\Users\casto\Desktop\DevU-Challenges\ChallengeSimpleDarts\Darts\bin\Debug\Darts.dll
+C:\Users\casto\Desktop\DevU-Challenges\ChallengeSimpleDarts\Darts\bin\Debug\Darts.pdb
+C:\Users\casto\Desktop\DevU-Challenges\ChallengeSimpleDarts\Darts\obj\Debug\Darts.csprojResolveAssemblyReference.cache
+C:\Users\casto\Desktop\DevU-Challenges\ChallengeSimpleDarts\Darts\obj\Debug\Darts.dll
+C:\Users\casto\Desktop\DevU-Challenges\ChallengeSimpleDarts\Darts\obj\Debug\Darts.pdb

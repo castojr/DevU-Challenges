@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Darts;
 
 namespace ChallengeSimpleDarts
 {
@@ -16,7 +17,7 @@ namespace ChallengeSimpleDarts
 
         protected void okButton_Click(object sender, EventArgs e)
         {
-
+            Dart dart = new Dart();
         }
     }
 }
