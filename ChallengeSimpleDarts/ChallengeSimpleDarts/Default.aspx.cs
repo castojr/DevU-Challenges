@@ -17,7 +17,7 @@ namespace ChallengeSimpleDarts
 
         protected void okButton_Click(object sender, EventArgs e)
         {
-            Dart dart = new Dart();
+            
         }
     }
 }
