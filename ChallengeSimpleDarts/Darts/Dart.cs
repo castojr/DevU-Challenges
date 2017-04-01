@@ -8,7 +8,32 @@ namespace Darts
 {
     public class Dart
     {
-        public Dart(Random random);
+        public int Score { get; set; }
+        public bool IsDouble { get; set; }
+        public bool IsTriple { get; set; }
+
+        Random _random;
+        public Dart(Random random)
+        {
+            _random = random;
+        }
+
+        public void Throw()
+        {
+            Score = _random.Next(0, 21);
+            int multiplier = _random.Next(1, 101);
+            if (multiplier > 95)
+            {
+                IsDouble = true;
+            }
+            else if (multiplier > 90)
+            {
+                IsTriple = true;
+            }
+            {
+
+            }
+        }
     }
 
-}
+ }
