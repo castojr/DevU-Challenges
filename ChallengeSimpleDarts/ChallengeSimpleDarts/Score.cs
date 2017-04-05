@@ -25,7 +25,7 @@ namespace ChallengeSimpleDarts
                 score = 25;
 
 
-                player.Score = 0;
+                player.Score += score;
         }
     }
 }

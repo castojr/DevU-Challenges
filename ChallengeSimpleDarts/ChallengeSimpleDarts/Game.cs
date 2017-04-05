@@ -37,17 +37,18 @@ namespace ChallengeSimpleDarts
 
         private string displayResults()
         {
-            string result = String.Format("{0}: {1}<br/>{2}: {3}", _player1.Name, _player1.Score, _player2.Name, _player2.Score);
+            string result = String.Format("{0}: {1}<br/>{2}: {3}<br/>", _player1.Name, _player1.Score, _player2.Name, _player2.Score);
 
             return result += "Winner: " + (_player1.Score > _player2.Score ? _player1.Name : _player2.Name);
         }
 
-        private void playRound(Player _player)
+        private void playRound(Player player)
         {
             for (int i = 0; i < 3; i++)
             {
                 Dart dart = new Dart(_random);
                 dart.Throw();
+                Score.ScoreDart(player, dart);
             }
         }
     }
