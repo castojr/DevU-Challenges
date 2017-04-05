@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Darts;
+using ChallengeSimpleDartPlayer;
 
 namespace ChallengeSimpleDarts
 {
@@ -24,13 +25,19 @@ namespace ChallengeSimpleDarts
             _random = new Random();
         }
 
-        public void Play()
+        public string Play()
         {
             while (_player1.Score < 300 && _player2.Score < 300)
             {
                 playRound(_player1);
                 playRound(_player2);
             }
+            return displayResults();
+        }
+
+        private string displayResults()
+        {
+
         }
 
         private void playRound(Player _player)
