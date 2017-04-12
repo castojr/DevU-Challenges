@@ -10,13 +10,13 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:Button ID="assignmentOneButton" runat="server" Text="Assignment 1" />
+        <asp:Button ID="assignmentOneButton" runat="server" OnClick="assignmentOneButton_Click" Text="Assignment 1" />
         <br />
         <br />
-        <asp:Button ID="assignmentTwoButton" runat="server" Text="Assignment 2" />
+        <asp:Button ID="assignmentTwoButton" runat="server" OnClick="assignmentTwoButton_Click" Text="Assignment 2" />
         <br />
         <br />
-        <asp:Button ID="assignmentThreeButton" runat="server" Text="Assignment 3" />
+        <asp:Button ID="assignmentThreeButton" runat="server" OnClick="assignmentThreeButton_Click" Text="Assignment 3" />
         <br />
         <br />
         <asp:Label ID="resultLabel" runat="server"></asp:Label>
