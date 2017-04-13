@@ -16,10 +16,17 @@ namespace ChallengeStudentCourses
 
         protected void assignmentOneButton_Click(object sender, EventArgs e)
         {
-            Course psychology = new Course();
-            Course computerScience = new Course();
-            Course physics = new Course();
+            
+            List<Course> courses = new List<Course>()
+            {
+                new Course { Name = "Psychology", CourseId = 111},
+                new Course { Name = "Computer Science", CourseId = 222 },
+                new Course { Name = "Physics", CourseId = 333 }
+            };
 
+            
+
+            
 
         }
 
