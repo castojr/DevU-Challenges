@@ -19,10 +19,16 @@ namespace ChallengeStudentCourses
             
             List<Course> courses = new List<Course>()
             {
-                new Course { Name = "Psychology", CourseId = 111},
-                new Course { Name = "Computer Science", CourseId = 222 },
-                new Course { Name = "Physics", CourseId = 333 }
-            };
+                new Course { Name = "Psychology", CourseId = 111,
+                    Students = new List<Student>() { new Student() {Name = "Joey Casto", StudentId = 1},
+                                                     new Student() {Name= "Ryan Casto", StudentId = 2}}},
+                new Course { Name = "Computer Science", CourseId = 222,
+                    Students = new List<Student>() { new Student() {Name = "Becca Casto", StudentId = 3},
+                                                     new Student() {Name = "Sophia Casto", StudentId = 4}}},
+                new Course { Name = "Physics", CourseId = 333,
+                    Students = new List<Student>() { new Student() {Name = "James Tabbert", StudentId = 5},
+                                                     new Student() {Name = "Vladika Tabbert", StudentId = 6 }}
+            }
 
             
 
