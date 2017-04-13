@@ -16,7 +16,11 @@ namespace ChallengeStudentCourses
 
         protected void assignmentOneButton_Click(object sender, EventArgs e)
         {
-           
+            Course psychology = new Course();
+            Course computerScience = new Course();
+            Course physics = new Course();
+
+
         }
 
         protected void assignmentTwoButton_Click(object sender, EventArgs e)
