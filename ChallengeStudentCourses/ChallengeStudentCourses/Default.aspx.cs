@@ -39,16 +39,21 @@ namespace ChallengeStudentCourses
                 {
                     resultLabel.Text += String.Format("&nbsp;&nbsp Student: {0}</br>&nbsp;&nbsp Student ID: {1}</br>", student.Name, student.StudentId);
                 }          
-            };
-          
-        }
-
-            
-
+            };          
+        }            
 
         protected void assignmentTwoButton_Click(object sender, EventArgs e)
         {
-           
+            Dictionary<int, Student> students = new Dictionary<int, Student>()
+           {
+               {1, new Student {Name = "Joey Casto", StudentId = 1}},
+               {2, new Student {Name = "Ryan Casto", StudentId = 2}},
+               {3, new Student {Name = "Sophia Casto", StudentId = 3}};
+
+
+           };
+
+
         }
 
         protected void assignmentThreeButton_Click(object sender, EventArgs e)
