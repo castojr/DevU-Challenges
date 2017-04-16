@@ -18,6 +18,7 @@ namespace ChallengeStudentCourses
         {
 
             string result = "";
+            
             List<Course> courses = new List<Course>()
             {
                 new Course { Name = "Psychology", CourseId = 111,
@@ -31,13 +32,15 @@ namespace ChallengeStudentCourses
                                                      new Student() {Name = "Vladika Tabbert", StudentId = 6}}}
             };
 
-            foreach (Course course in courses)
+            foreach (var course in courses)
             {
-                result = course.Name + "</br>" + 
-                         course.CourseId + "</br>" + 
-                         course.Students; 
+               resultLabel.Text += String.Format("<b>Course: {0}</b></br> Course ID: {1}</br>", course.Name, course.CourseId);
+                foreach (var student in course.Students)
+                {
+                    resultLabel.Text += String.Format("&nbsp;&nbsp Student: {0}</br>&nbsp;&nbsp Student ID: {1}</br>", student.Name, student.StudentId);
+                }          
             };
-            resultLabel.Text = result;
+          
         }
 
             
