@@ -44,16 +44,13 @@ namespace ChallengeStudentCourses
 
         protected void assignmentTwoButton_Click(object sender, EventArgs e)
         {
-            Dictionary<int, Student> students = new Dictionary<int, Student>()
+            Dictionary<string, Student> students = new Dictionary<string, Student>()
            {
-               {1, new Student {Name = "Joey Casto", StudentId = 1}},
-               {2, new Student {Name = "Ryan Casto", StudentId = 2}},
-               {3, new Student {Name = "Sophia Casto", StudentId = 3}};
-
-
+               {"A1", new Student {Name = "Joey Casto", StudentId = 1}},
+               {"A2", new Student {Name = "Ryan Casto", StudentId = 2}},
+               {"A3", new Student {Name = "Sophia Casto", StudentId = 3}}
            };
-
-
+            
         }
 
         protected void assignmentThreeButton_Click(object sender, EventArgs e)

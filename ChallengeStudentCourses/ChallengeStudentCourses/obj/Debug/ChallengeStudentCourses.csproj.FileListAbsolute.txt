@@ -28,6 +28,7 @@ C:\Users\casto\Desktop\DevU-Challenges\ChallengeStudentCourses\ChallengeStudentC
 C:\Users\casto\Desktop\DevU-Challenges\ChallengeStudentCourses\ChallengeStudentCourses\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\casto\Desktop\DevU-Challenges\ChallengeStudentCourses\ChallengeStudentCourses\bin\Microsoft.ApplicationInsights.xml
 C:\Users\casto\Desktop\DevU-Challenges\ChallengeStudentCourses\ChallengeStudentCourses\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\casto\Desktop\DevU-Challenges\ChallengeStudentCourses\ChallengeStudentCourses\obj\Debug\ChallengeStudentCourses.csprojResolveAssemblyReference.cache
 C:\Users\casto\Desktop\DevU-Challenges\ChallengeStudentCourses\ChallengeStudentCourses\obj\Debug\ChallengeStudentCourses.dll
 C:\Users\casto\Desktop\DevU-Challenges\ChallengeStudentCourses\ChallengeStudentCourses\obj\Debug\ChallengeStudentCourses.pdb
+C:\Users\casto\Desktop\DevU-Challenges\ChallengeStudentCourses\ChallengeStudentCourses\bin\ChallengeStudentCourses.dll.CodeAnalysisLog.xml
+C:\Users\casto\Desktop\DevU-Challenges\ChallengeStudentCourses\ChallengeStudentCourses\bin\ChallengeStudentCourses.dll.lastcodeanalysissucceeded
