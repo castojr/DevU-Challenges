@@ -44,13 +44,18 @@ namespace ChallengeStudentCourses
 
         protected void assignmentTwoButton_Click(object sender, EventArgs e)
         {
+            Course course1 = new Course() {Name = "Psychology", CourseId = 111};
+            Course course2 = new Course() {Name = "Computer Science", CourseId = 101};
+            Course course3 = new Course() {Name = "Philosophy", CourseId = 201};
+            Course course4 = new Course() {Name = "Art", CourseId = 202};
+
+
             Dictionary<string, Student> students = new Dictionary<string, Student>()
            {
-               {"A1", new Student {Name = "Joey Casto", StudentId = 1}},
+               { "A1", new Student {Name = "Joey Casto", StudentId = 1,}},
                {"A2", new Student {Name = "Ryan Casto", StudentId = 2}},
                {"A3", new Student {Name = "Sophia Casto", StudentId = 3}}
-           };
-            
+           };          
         }
 
         protected void assignmentThreeButton_Click(object sender, EventArgs e)
