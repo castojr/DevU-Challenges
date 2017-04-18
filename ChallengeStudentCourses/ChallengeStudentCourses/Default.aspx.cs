@@ -57,10 +57,14 @@ namespace ChallengeStudentCourses
                {3, new Student {Name = "Sophia Casto", StudentId = 3, Courses = new List<Course> {course3, course4}}}
            };
 
-            foreach (var studentInfo in students)
+            foreach (var student in students)
             {
-                resultLabel.Text = String.Format("Student")
-            }       
+                resultLabel.Text += String.Format("Student: {0}</br>" ,student.Value.Name) + "&nbsp Enrolled Courses</br>";
+                foreach (var course in student.Value.Courses)
+                {
+                    resultLabel.Text += String.Format("&nbsp;&nbsp;&nbsp{0}</br>", course.Name);
+                }
+            };       
         }
 
         protected void assignmentThreeButton_Click(object sender, EventArgs e)
