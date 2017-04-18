@@ -50,12 +50,17 @@ namespace ChallengeStudentCourses
             Course course4 = new Course() {Name = "Art", CourseId = 202};
 
 
-            Dictionary<string, Student> students = new Dictionary<string, Student>()
+            Dictionary<int, Student> students = new Dictionary<int, Student>()
            {
-               { "A1", new Student {Name = "Joey Casto", StudentId = 1,}},
-               {"A2", new Student {Name = "Ryan Casto", StudentId = 2}},
-               {"A3", new Student {Name = "Sophia Casto", StudentId = 3}}
-           };          
+               {1, new Student {Name = "Joey Casto", StudentId = 1, Courses = new List<Course> {course1, course2}}},
+               {2, new Student {Name = "Ryan Casto", StudentId = 2, Courses = new List<Course> {course2, course3}}},
+               {3, new Student {Name = "Sophia Casto", StudentId = 3, Courses = new List<Course> {course3, course4}}}
+           };
+
+            foreach (var studentInfo in students)
+            {
+                resultLabel.Text = String.Format("Student")
+            }       
         }
 
         protected void assignmentThreeButton_Click(object sender, EventArgs e)
