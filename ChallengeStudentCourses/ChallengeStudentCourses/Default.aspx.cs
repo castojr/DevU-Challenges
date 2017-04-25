@@ -75,17 +75,20 @@ namespace ChallengeStudentCourses
 
             Dictionary<int, Student> students = new Dictionary<int, Student>()
             {
-                {1, new Student {Name = "Joey Casto", StudentId = 1,
-                                Courses = new List<Course> {course1, course2 },
-                                Grade = new List<Grade>() { new Grade() {Letter = "A+", Percentage = 100}}}
-                }
+                {1, new Student {Name = "Joey Casto", StudentId = 1, Courses = new List<Course> {course1, course2 }}},
+                {2, new Student {Name = "Ryan Casto", StudentId = 2, Courses = new List<Course> {course2, course3 }}}
             };
+
             foreach (var student in students)
             {
-                resultLabel.Text += String.Format("Student: {0}</br>", student.Value.Name) + "&nbsp; Course:";
+                resultLabel.Text += String.Format("Student: {0}</br>", student.Value.Name) + "&nbsp; Course: </br>";
                 foreach (var course in student.Value.Courses)
                 {
-                    resultLabel.Text += String.Format("{0} ", course.Name);
+                    resultLabel.Text += String.Format("&nbsp;&nbsp;&nbsp;{0} </br>", course.Name);
+                    /*foreach (var grade in student.Value.Grade)
+                    {
+                        resultLabel.Text += String.Format(" Grade {0}: {1}%</br>&nbsp;", grade.Letter, grade.Percentage);
+                    }*/
                 } 
             }
                 
