@@ -82,7 +82,11 @@ namespace ChallengeStudentCourses
             };
             foreach (var student in students)
             {
-                resultLabel.Text += String.Format("Student: {0}</br>", student.Value.Name); 
+                resultLabel.Text += String.Format("Student: {0}</br>", student.Value.Name) + "&nbsp; Course:";
+                foreach (var course in student.Value.Courses)
+                {
+                    resultLabel.Text += String.Format("{0} ", course.Name);
+                } 
             }
                 
           }
