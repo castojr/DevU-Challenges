@@ -69,6 +69,17 @@ namespace ChallengeStudentCourses
 
         protected void assignmentThreeButton_Click(object sender, EventArgs e)
         {
+            Course course1 = new Course() { Name = "Computer Science", CourseId = 1};
+            Course course2 = new Course() { Name = "Engineering", CourseId = 2};
+            Course course3 = new Course() { Name = "Chemistry", CourseId = 3};
+
+            Dictionary<int, Student> students = new Dictionary<int, Student>()
+            {
+                {1, new Student {Name = "Joey Casto", StudentId = 1,
+                                Courses = new List<Course> {course1, course2 },
+                                Grade = new List<Grade>() { new Grade() {Letter = "A+", Percentage = 100}}}}};
+            }
+
             
         }
     }

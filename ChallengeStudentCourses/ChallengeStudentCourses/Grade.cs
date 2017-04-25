@@ -7,7 +7,8 @@ namespace ChallengeStudentCourses
 {
     public class Grade
     {
-        public int percentage { get; set; }
+        public int Percentage { get; set; }
+        public string Letter { get; set; }
         public List<Course> Courses {get; set; }
         public List<Student> Students { get; set; }
     }
