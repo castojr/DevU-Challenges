@@ -71,7 +71,7 @@ namespace ChallengeStudentCourses
 
             Dictionary<int, Student> students = new Dictionary<int, Student>()
             {
-                {1, new Student {Name = "Joey Casto", StudentId = 1, Courses = new List<Course> {course1, course2}}},
+                {1, new Student {Name = "Joey Casto", StudentId = 1, Courses = new List<Course> { course1, course2}}},
                 {2, new Student {Name = "Ryan Casto", StudentId = 2, Courses = new List<Course> {course2, course3}}}
             };
 
