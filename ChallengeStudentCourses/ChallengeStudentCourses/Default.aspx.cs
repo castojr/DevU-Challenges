@@ -77,10 +77,15 @@ namespace ChallengeStudentCourses
             {
                 {1, new Student {Name = "Joey Casto", StudentId = 1,
                                 Courses = new List<Course> {course1, course2 },
-                                Grade = new List<Grade>() { new Grade() {Letter = "A+", Percentage = 100}}}}};
+                                Grade = new List<Grade>() { new Grade() {Letter = "A+", Percentage = 100}}}
+                }
+            };
+            foreach (var student in students)
+            {
+                resultLabel.Text += String.Format("Student: {0}</br>", student.Value.Name); 
             }
-
-            
+                
+          }
+                   
         }
     }
-}
