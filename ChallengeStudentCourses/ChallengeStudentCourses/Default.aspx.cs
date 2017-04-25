@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ChallengeStudentCourses
 {
@@ -75,8 +71,8 @@ namespace ChallengeStudentCourses
 
             Dictionary<int, Student> students = new Dictionary<int, Student>()
             {
-                {1, new Student {Name = "Joey Casto", StudentId = 1, Courses = new List<Course> {course1, course2 }}},
-                {2, new Student {Name = "Ryan Casto", StudentId = 2, Courses = new List<Course> {course2, course3 }}}
+                {1, new Student {Name = "Joey Casto", StudentId = 1, Courses = new List<Course> {course1, course2}}},
+                {2, new Student {Name = "Ryan Casto", StudentId = 2, Courses = new List<Course> {course2, course3}}}
             };
 
             foreach (var student in students)
