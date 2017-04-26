@@ -65,6 +65,14 @@ namespace ChallengeStudentCourses
 
         protected void assignmentThreeButton_Click(object sender, EventArgs e)
         {
+            Student student = new Student();
+            student.Name = "Joey Casto";
+            student.StudentId = 2345;
+            student.Enrollments = new List<Enrollment>
+            {
+                new Enrollment {Course = new Course { Name = "Computer Science"}, Grade = 98 },
+                new Enrollment {Course = new Course {Name = "Engineering" }, Grade = 94 }
+            };
 
 
 
