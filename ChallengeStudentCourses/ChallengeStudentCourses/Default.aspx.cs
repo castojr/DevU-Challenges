@@ -70,11 +70,15 @@ namespace ChallengeStudentCourses
             student.StudentId = 2345;
             student.Enrollments = new List<Enrollment>
             {
-                new Enrollment {Course = new Course { Name = "Computer Science"}, Grade = 98 },
-                new Enrollment {Course = new Course {Name = "Engineering" }, Grade = 94 }
+                new Enrollment {Course = new Course {Name = "Computer Science"}, Grade = 98 },
+                new Enrollment {Course = new Course {Name = "Engineering" }, Grade = 94 },
             };
 
-
+            resultLabel.Text += String.Format("{0} - {1}</br>", student.Name, student.StudentId);
+            foreach (var enrollment in student.Enrollments)
+            {
+                resultLabel.Text += String.Format("&nbsp;&nbsp{0} - {1}</br>" ,enrollment.Course.Name, enrollment.Grade);
+            }
 
 
         }
