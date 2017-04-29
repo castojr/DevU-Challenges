@@ -16,12 +16,13 @@ namespace MegaChallengeWar1
 
         protected void goButton_Click(object sender, EventArgs e)
         {
-            Random random = new Random();
-            Player player1 = new Player();
-            Player player2 = new Player();
-            Card card = new Card();
+            List<Player> players = new List<Player>()
+            {
+                new Player() {Player1 = "Player 1" },
+                new Player() {Player2 = "Player 2" }
+            };
 
-            Dictionary<int, Card> Deck = new Dictionary<int, Card>
+           Dictionary<int, Card> Deck = new Dictionary<int, Card>
            {
                {1, new Card {CardNumber = 2, CardSuit = "Hearts", CardName = "2 of Hearts" }},
                {2, new Card {CardNumber = 3, CardSuit = "Hearts", CardName = "3 of Hearts" }},
@@ -75,16 +76,19 @@ namespace MegaChallengeWar1
                {50, new Card {CardNumber = 12, CardSuit = "Spades", CardName = "Queen of Spades" }},
                {51, new Card {CardNumber = 13, CardSuit = "Spades", CardName = "King of Spades" }},
                {52, new Card {CardNumber = 14, CardSuit = "Spades", CardName = "Ace of Spades" }},
-
+               
 
            };
             // Displays all the Card names
             foreach (var playerCard in Deck)
             {
                 cardsDealtLabel.Text += String.Format("{0}</br>", playerCard.Value.CardName);
-            }        
+            }
 
-
+            foreach (var player in players)
+            {
+                //TODO deal 26 cards to each player randomly  
+            }
         }
     }
 }
