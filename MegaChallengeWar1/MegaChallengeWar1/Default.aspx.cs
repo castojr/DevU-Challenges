@@ -16,6 +16,11 @@ namespace MegaChallengeWar1
 
         protected void goButton_Click(object sender, EventArgs e)
         {
+            Random random = new Random();
+            Card card = new Card();
+
+
+
 
         }
     }
