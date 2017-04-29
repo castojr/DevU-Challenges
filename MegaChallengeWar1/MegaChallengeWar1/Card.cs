@@ -9,5 +9,6 @@ namespace MegaChallengeWar1
     {
         public int CardNumber { get; set; }
         public string CardSuit { get; set; }
+        public string CardName { get; set; }
     }
 }
