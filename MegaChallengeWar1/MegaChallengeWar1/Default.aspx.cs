@@ -17,9 +17,16 @@ namespace MegaChallengeWar1
         protected void goButton_Click(object sender, EventArgs e)
         {
             Random random = new Random();
+            Player player1 = new Player();
+            Player player2 = new Player();
             Card card = new Card();
 
+           Dictionary<int, Card> CardSuits = new Dictionary<int, Card>
+           {
+               {1, new Card {CardNumber = 1 } }
+           }
 
+            
 
 
         }
